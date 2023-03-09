@@ -9,11 +9,12 @@ import {
   ChannelDetail,
   VideoDetail,
 } from "./components";
+import { backgroundColor_dark } from "./utils/colors";
 
 export default function App() {
   return (
     <div className="App">
-      <Box sx={{ backgroundColor: "#000" }}>
+      <Box sx={{ backgroundColor: `${backgroundColor_dark}` }}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Feed />} />

@@ -3,6 +3,7 @@ import { Stack } from "@mui/system";
 import { Link, useNavigate } from "react-router-dom";
 import { logo } from "../utils/constants";
 import {SearchBar} from "../components";
+import { backgroundColor_dark } from "../utils/colors";
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
         p={2}
         sx={{
           position: "sticky",
-          background: "#000",
+          background: `${backgroundColor_dark}`,
           top: 0,
           justifyContent: "space-between",
         }}>
